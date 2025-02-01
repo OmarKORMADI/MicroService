@@ -19,7 +19,7 @@ function getWeatherData(city, callback) {
 getWeatherData("Sousse", (error, data) => {
   if (error) {
     console.log("Erreur :", error);
-  } else {
+  } else { 
     console.log("Description :", data.weather[0].description);
     console.log("Température :", data.main.temp + "°C");
     console.log("Humidité :", data.main.humidity + "%");
